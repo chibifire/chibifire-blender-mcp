@@ -1,4 +1,4 @@
-# chibifire-blender-mcp
+# transport-blender-mcp
 
 A Blender addon plus MCP server that lets Claude (Hermes Agent, and other MCP clients) drive Blender for prompt-assisted modeling and scene construction.
 
@@ -21,7 +21,7 @@ Two halves: a Blender 4.2+ extension (`addons/blender_mcp_addon/`) running a TCP
 `docs/install.md` has the full steps: prerequisites, building the addon zip, installing it in Blender 3.0 through 4.2+, the config for Claude Desktop, Claude Code, Cursor, and Hermes Agent, and the environment variables. The short version, once the addon is installed:
 
 ```bash
-claude mcp add blender -- uvx --from git+https://github.com/chibifire/chibifire-blender-mcp blender-mcp
+claude mcp add blender -- uvx --from git+https://github.com/v-sekai-multiplayer-fabric/transport-blender-mcp blender-mcp
 ```
 
 Run one MCP server at a time; two clients will fight over the Blender socket.
