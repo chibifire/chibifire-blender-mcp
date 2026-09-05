@@ -2,6 +2,12 @@
 
 All notable changes to this project are documented in this file.
 
+## [2.0.2] — 2026-09-05
+
+### Fixed
+- **Cap `mcp[cli]` below 2.0** — the dependency was open-upper-bound, so `uvx --from git+...` resolved to `mcp 2.x` where `FastMCP` was renamed to `MCPServer`, breaking `from mcp.server.fastmcp import FastMCP` at import. Now pinned `mcp[cli]>=1.3.0,<2`.
+
+
 ## [2.0.0] — 2026-05-08
 
 ### Added
